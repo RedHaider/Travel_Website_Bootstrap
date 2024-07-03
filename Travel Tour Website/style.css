@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navbar{
+    background: #f9f9f9;
+}
+
+#logo{
+    font-size: 40px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-shadow: 0px 1px 1px brown;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+#logo span{
+    color:orange ;
+}
+
+#navbar-toggler span{
+    color: #ffa500;
+}
+
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+}
+
+.nav-item .nav-link:hover{
+    background:orange ;
+    color: white;
+}
+
+#navbar form button{
+    background-color: orange;
+    border: white;
+    margin-right: 40px;
+}
+
+.my-home-section {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.2)),url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-home-section .content{
+    text-align: center;
+    padding: 200px;
+}
+
+.my-home-section .content h5{
+    color:white;
+    font-size: 38px;
+    font-weight: 500px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.my-home-section .content h1{
+    color: #f9f9f9;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    
+}
+
+.my-home-section .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.changecontent::after{
+    content: ' ';
+    color:#ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "Bangladesh";}
+    20%{content: "India";}
+    30%{content: "Pakistan";}
+    40%{content: "Srilanka";}
+    50%{content: "Bhutan";}
+    60%{content: "Kashmir";}
+    70%{content: "Nepal";}
+    80%{content: "Afganistan";}
+    90%{content: "Iran";}
+    100%{content: "China";}
+}
+
+.my-home-section .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5px;
+}
+
+.my-home-section .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+
+@media (max-width:450px){
+    .my-home-section .content h5{
+        font-size: 25px;
+    }
+    .my-home-section .content h1{
+        font-size: 38px;
+    }
+    .my-home-section .content p{
+        font-size: 13px;
+    }
+}
+
+/* Section Book Start */
+.book{
+    background: white;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    box-shadow:  0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #ffa500;
+    color: #f9f9f9;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+}
+}
+
+/* Section Book Start */
+
+/* Section Packages */
+.section-main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.section-main-text h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section Packages */
